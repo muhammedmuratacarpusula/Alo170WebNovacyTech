@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>ALO170</title>
+  <!--bootstrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+  <!-- MDB -->
+  <link rel="stylesheet" href="css/mdb.min.css" />
+  <!-- alert CSS -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css" />
+
+  <!-- Default theme -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css" />
+  <!-- Semantic UI theme -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/semantic.min.css" />
+  <!-- Bootstrap theme -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/bootstrap.min.css" />
+
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+
+  <!-- Custom styles -->
+  <!-- <link rel="stylesheet" href="css/style.css" /> -->
+  <link rel="stylesheet" href="css/custom.css" />
+
+  <!-- tab icon (favico)-->
+  <link rel="icon" href="./img/logo.png" type="image/x-icon" />
+
+  <script src="js/jquery-3.6.3.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+
+  <style>
+    .nav-item {
+      font-size: 18px;
+    }
+
+    .navbar {
+      background-color: rgba(73, 170, 248, 0.781) !important;
+    }
+
+    /* yazı seçim engelleme */
+    .prevent-select {
+      -webkit-user-select: none;
+      /* Safari */
+      -ms-user-select: none;
+      /* IE 10 and IE 11 */
+      user-select: none;
+      /* Standard syntax */
+    }
+
+    /* .card-body{
+      height: 200px !important;
+    } */
+
+    .newsImgs {
+      width: 100% !important;
+      height: 50% !important;
+    }
+  </style>
+  <style>
+    /* Height for devices larger than 576px */
+    @media (min-width: 992px) {
+      #intro {
+        margin-top: -58.59px;
+      }
+    }
+
+    .navbar .nav-link {
+      color: #fff !important;
+    }
+  </style>
+</head>
+
+<body class="prevent-select">
+
+  <header>
+    <!-- Sidebar Mobile -->
+    <nav id="sidebarMenuMobile" class="navbar collapse sidebar" style="margin-top: -100% !important;">
+      <div class="list-group list-group-flush mx-3">
+
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#intro">Anasayfa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#referance">İletişim</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#bildirimSorgula">Bildirim Sorgulama</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#news">Haberler ve Duyurular</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sgkTV">SGK TV</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#bilgilendirme">Pratik Bilgiler</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sss">S.S.S</a>
+          </li>
+        </ul>
+
+      </div>
+      <br>
+      <br>
+      <div style="position:absolute; bottom:10%; left: 3%">
+
+        <a style="width: 90%; font-size: 12px !important;" href="tel:170" class="btn btn-primary m-1 social-media telno"
+        role="button" rel="nofollow" target="_blank">
+        <i class="bi bi-telephone-fill" style="float: left;"></i>
+        alo170
+      </a>
+      
+      <a style="width: 90%; font-size: 12px !important;" href="https://wa.me/+908502227170" class="btn btn-primary m-1 social-media whatsappDestek "
+        role="button" rel="nofollow" target="_blank">
+        <i class="bi bi-whatsapp" style="float: left;"></i>
+        whatsapp destek
+      </a>
+
+      <a style="width: 90%; font-size: 12px !important;" href="tel:+9 0216 170 1 122"
+        class="btn btn-primary m-1 social-media yurtDisi" role="button" rel="nofollow" target="_blank">
+        <i class="bi bi-flag-fill" style="float: left;"></i>
+        Yurtdışı destek
+      </a>
+
+      <a style="width: 90%; font-size: 12px !important;" href="tel:0850 222 7 170"
+        class="btn btn-primary m-1 social-media telno" role="button" rel="nofollow" target="_blank">
+        <i class="bi bi-ear-fill" style="float: left; "></i>
+        işitme engelli destek
+      </a>
+
+
+        <hr>
+
+        <a style="width: 45%" href="https://www.instagram.com/alo170kurumsal/" class="btn btn-primary m-1 social-media"
+          role="button" rel="nofollow" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a style="width: 45%" href="https://www.facebook.com/Alo170Kurumsal/?locale=tr_TR"
+          class="btn btn-primary m-1 social-media" role="button" rel="nofollow" target="_blank">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a style="width: 45%"
+          href="https://twitter.com/Alo170Kurumsal?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+          class="btn btn-primary m-1 social-media" role="button" rel="nofollow" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a style="width: 45%"
+          href="https://twitter.com/Alo170Kurumsal?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+          class="btn btn-primary m-1 social-media" role="button" rel="nofollow" target="_blank">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
+
+      <div style="position:absolute; bottom:2%; left: 3%; width: 70%;">
+        <a style="width: 100%" id="kvkkMetni" href="https://alo170.gov.tr/Home/Kvkk" class="btn btn-info m-1"
+          role="button" rel="nofollow" target="_blank">
+          KVKK ve AYDINLATMA METNİ
+        </a>
+
+      </div>
+    </nav>
+    <!-- Sidebar -->
+
+    <!-- Sidebar -->
+    <nav id="sidebarMenu" class="navbar collapse sidebar collapse">
+      <div class="position-sticky">
+        <div class="list-group list-group-flush mx-3">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li id="sidebar-logo" class="nav-item">
+              <a class="nav-link" href="#intro">
+                <img src="./image/alo170white.png" height="80" alt="ALO170" loading="lazy" />
+              </a>
+            </li>
+            <li class="nav-item desktopSidebar">
+              <a class="nav-link" aria-current="page" href="#intro">Anasayfa</a>
+            </li>
+            <li class="nav-item desktopSidebar">
+              <a class="nav-link" href="#referance">İletişim</a>
+            </li>
+            <li class="nav-item desktopSidebar">
+              <a class="nav-link" href="#bildirimSorgula">Bildirim Sorgulama</a>
+            </li>
+            <li class="nav-item desktopSidebar">
+              <a class="nav-link" href="#news">Haberler ve Duyurular</a>
+            </li>
+            <li class="nav-item desktopSidebar">
+              <a class="nav-link" href="#sgkTV">SGK TV</a>
+            </li>
+            <li class="nav-item desktopSidebar">
+              <a class="nav-link" href="#bilgilendirme">Pratik Bilgiler</a>
+            </li>
+            <li class="nav-item desktopSidebar">
+              <a class="nav-link" href="#sss">S.S.S</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div style="position:absolute; bottom:10%; left: 3%">
+
+ 
+      
+        <h5 style="margin-left: 13%; font-family: 'Pacifico', cursive; color: white;">Destek Hatlarımız</h5>
+
+        <a style="width: 90%; font-size: 12px !important;" href="tel:170" class="btn btn-primary m-1 social-media telno"
+          role="button" rel="nofollow" target="_blank">
+          <i class="bi bi-telephone-fill" style="float: left;"></i>
+          alo170
+        </a>
+        
+        <a style="width: 90%; font-size: 12px !important;" href="https://wa.me/+908502227170" class="btn btn-primary m-1 social-media whatsappDestek "
+          role="button" rel="nofollow" target="_blank">
+          <i class="bi bi-whatsapp" style="float: left;"></i>
+          whatsapp destek
+        </a>
+
+        <a style="width: 90%; font-size: 12px !important;" href="tel:+9 0216 170 1 122"
+          class="btn btn-primary m-1 social-media yurtDisi" role="button" rel="nofollow" target="_blank">
+          <i class="bi bi-flag-fill" style="float: left;"></i>
+          Yurtdışı destek
+        </a>
+
+        <a style="width: 90%; font-size: 12px !important;" href="tel:0850 222 7 170"
+          class="btn btn-primary m-1 social-media telno" role="button" rel="nofollow" target="_blank">
+          <i class="bi bi-ear-fill" style="float: left; "></i>
+          işitme engelli destek
+        </a>
+
+        <hr>
+
+        <a style="width: 45%" href="https://www.instagram.com/alo170kurumsal/"
+          class="btn btn-primary m-1 social-media instagram" role="button" rel="nofollow" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a style="width: 45%" href="https://www.facebook.com/Alo170Kurumsal/?locale=tr_TR"
+          class="btn btn-primary m-1 social-media facebook" role="button" rel="nofollow" target="_blank">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a style="width: 45%"
+          href="https://twitter.com/Alo170Kurumsal?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+          class="btn btn-primary m-1 social-media twitter" role="button" rel="nofollow" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a style="width: 45%"
+          href="https://twitter.com/Alo170Kurumsal?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+          class="btn btn-primary m-1 social-media youtube" role="button" rel="nofollow" target="_blank">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
+
+      <div style="position:absolute; bottom:2%; left: 2%;">
+        <a style="width: 100%" id="Kvkk" href="https://alo170.gov.tr/Home/Kvkk" class="btn btn-info m-1" role="button"
+          rel="nofollow" target="_blank">
+          KVKK VE AYDINLATMA METNİ
+        </a>
+      </div>
+    </nav>
+    <!-- Sidebar -->
+
+    <!-- iletisim kanalları flag start-->
+
+    <!-- iletisim kanalları flag end -->
+
+    <!-- Navbar -->
+    <nav id="main-navbar" class="navbar navbar-expand-lg fixed-top">
+      <!-- Container wrapper -->
+      <div class="container-fluid">
+        <!-- Toggle button -->
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#sidebarMenuMobile"
+          aria-controls="sidebarMenuMobile" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <a class="navbar-brand nav-link" style="margin-right: 20%;" href="#intro">
+          <img src="./image/alo170white.png" height="60" alt="ALO170" loading="lazy" />
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarExample01" style="margin-right: 20%;">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="#intro">Anasayfa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#referance">İletişim</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#bildirimSorgula">Bildirim Sorgulama</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#news">Haberler ve Duyurular</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sgkTV">SGK TV</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#bilgilendirme">Pratik Bilgiler</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sss">S.S.S</a>
+            </li>
+          </ul>
+
+        </div>
+        <!-- Right links -->
+        <ul class="navbar-nav nav-link ms-auto d-flex flex-row">
+          <!-- Icon -->
+          <li class="nav-item forRightImg">
+            <img src="./image/bayrak.png" height="60" alt="">
+          </li>
+        </ul>
+      </div>
+      <!-- Container wrapper -->
+    </nav>
+  </header>
+
+
+  <!-- Background image -->
+  <div id="intro" class="bg-image vh-100 shadow-1-strong">
+    <video style="min-width: 100%; min-height: 100%" playsinline autoplay muted loop>
+      <source class="h-100" src="./video/word.mp4" type="video/mp4" />
+    </video>
+    <div class="mask" style="
+            background: linear-gradient(
+              45deg,
+              rgba(29, 236, 198, 0.205),
+              rgba(91, 14, 214, 0.24) 100%
+            );
+          ">
+      <div class="container d-flex align-items-center justify-content-center text-center h-100">
+        <div class="text-white">
+          <div class="infoForIstatistic" style="margin-bottom: -10%; margin-top: 10%;">
+            <div class="istatisticValue">
+              <img class="istatisticIcon" src="./img/istatistik/phone.png" style="width: 128px" alt="Telefon" />
+              <br />
+              <br />
+
+              <p class="istatisticText">
+                <strong class="numberValuesIstatistic" id="gorusmede">500</strong> <br> Şuanda vatandaşımız görüşme
+                sağlıyor.
+              </p>
+            </div>
+            <div class="istatisticValue">
+              <img class="istatisticIcon" src="./img/istatistik/people.png" style="width: 225px"
+                alt="Görüşmede" /><br />
+              <br />
+
+              <p class="istatisticText">
+
+                <strong id="bugunGorusmeSagladi" class="numberValuesIstatistic">1768</strong> <br> Bugün görüşme
+                sağlayan vatandaşımız.
+              </p>
+            </div>
+            <div class="istatisticValue">
+              <img class="istatisticIcon" src="./img/istatistik/complate.png" style="width: 128px"
+                alt="Çözüm bulan" /><br />
+              <br />
+
+              <p class="istatisticText">
+
+                <strong id="bugunBasvuruCozumSagladi" class="numberValuesIstatistic">1768</strong> <br>
+                Bugün çözüme ulaşan vatandaşımız.
+              </p>
+            </div>
+
+
+          </div>
+          <div class="istatisticValue">
+            <i class="bi bi-calendar-check-fill" style="font-size: 400%;"></i><br />
+            <br />
+
+            <p class="istatisticText">
+              <strong id="buYilGorusmeSaglayanVatandaslar" class="numberValuesIstatistic">1768</strong> <br> Bu yıl
+              görüşme sağlayan vatandaşımız.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- Background image -->
+
+
+  <!--Main layout-->
+  <main>
+
+    <div class="container">
+      <br />
+      <br />
+      <!--Section: referans alanı -->
+      <br>
+      <br>
+      <section id="referance" class="mb-5">
+        <div class="infoForIstatistic">
+          <img class="referanceLogo csgb" src="./img/referance/T.C._Aile_ve_Sosyal_Hizmetler_Bakanlığı_logo.png"
+            width="20%" height="20%" alt="çalışma ve sosyal güvenlik bakanlığı" />
+          <img class="referanceLogo desktopSGK desktopRefernaceLogo mobileReferanceLogo sgk"
+            src="./img/referance/sgk-logo.png" width="10%" height="10%" alt="sgk" />
+          <img class="referanceLogo desktopISKUR desktopRefernaceLogo mobileReferanceLogo"
+            src="./img/referance/iskur.png" width="10%" height="10%" alt="işkur" />
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          <img class="referanceLogo desktopMYK desktopRefernaceLogo mobileReferanceLogo myk"
+            src="./img/referance/myk.png" width="5%" height="5%" alt="myk" />
+          <img class="referanceLogo alo170 desktopAlo170" src="./img/logo.png" width="17%" height="17%" alt="ALO170" />
+
+        </div>
+      </section>
+      <br />
+      <br />
+      <!-- Section: Referans alanı -->
+      <!--Section: cards area for ihbar, görüntülü destek, canlı destek, sss  cards-->
+      <!-- ihbar şikayet modal start-->
+
+      <div class="modal fade" style="overflow: scroll; z-index: 10000" id="modal-ihbar-sikayet" tabindex="-1"
+        aria-labelledby="modalIhbarModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalIhbarModalLabel">
+                Bir kayıt oluşturun
+              </h5>
+              <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="" id="ihbarForm">
+              <div class="modal-body">
+                <div class="form-check mb-3">
+                  <input class="form-check-input" type="checkbox" value="" id="kisiselBilgiCheck" />
+                  <label class="form-check-label" for="kisiselBilgiCheck">Kişisel bilgilerimi paylaşmak
+                    istemiyorum.</label>
+                </div>
+
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div id="ihbarTcDiv" class="form-outline mb-3">
+                      <input type="number" id="ihbarTc" class="form-control form-control-lg" required />
+                      <label class="form-label" for="ihbarTc">TC Kimlik numaranız</label>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6">
+                    <!-- vatandas adı -->
+                    <div id="ihbarAdDiv" class="form-outline mb-3">
+                      <input type="text" id="ihbarAd" class="form-control form-control-lg" required />
+                      <label class="form-label" for="ihbarAd">Adınız</label>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6">
+                    <!-- vatandas soyadı adı -->
+                    <div id="ihbarSoyadDiv" class=" form-outline mb-3">
+                      <input type="text" id="ihbarSoyad" class="form-control form-control-lg" required />
+                      <label class="form-label" for="ihbarSoyad">Soyadınız</label>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6">
+                    <!-- vatandas doğum ay -->
+                    <div id="ihbarDogumTarihDiv" class="form-outline  mb-3">
+                      <input type="text" onfocus="(this.type='date')" id="ihbarDogumTarih"
+                        class="form-control form-control-lg" required />
+                      <label class="form-label" for="ihbarDogumTarih">Doğum Tarihi</label>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6">
+                    <!-- vatandas telefon numarası -->
+                    <div id="ihbarTelefonDiv" class="form-outline  mb-3">
+                      <input id="ihbarTelefon" type="number" class="form-control form-control-lg" required />
+                      <label class="form-label" for="ihbarTelefon">Telefon numaranız</label>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6">
+                    <!-- bildirim sebebi select elementi-->
+                    <select id="ihbarBildirimSebebi" class="form-select mb-3" required>
+                      <option value="" selected>Bildirim sebebi</option>
+                    </select>
+                  </div>
+
+                  <div class="col-sm-6">
+                    <!-- Kurumlar select elementi-->
+                    <select id="ihbarKurumlar" class="form-select mb-3" required>
+                      <option value="" selected>Kurum seçiniz</option>
+                    </select>
+                  </div>
+
+                  <div class="col-sm-6">
+                    <!-- Konu select elementi -->
+                    <select class="form-select  mb-3" id="ihbarKonular" required>
+                      <option value="" selected>Konu</option>
+                    </select>
+                  </div>
+
+                  <div class="col-sm-6">
+                    <!-- Alt Konu select elementi -->
+                    <select id="ihbarAltKonular" class="form-select mb-3" required>
+                      <option value="" selected>Alt konu</option>
+                    </select>
+                  </div>
+
+                  <div class="col-sm-12">
+                    <!-- ihbar sikayet metni-->
+                    <div class="form-outline">
+                      <textarea class="form-control" id="ihbarMesaj" rows="4" required></textarea>
+                      <label class="form-label" for="ihbarMesaj">Mesajınız...</label>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div id="modal-footer-new-100" class="modal-body">
+                <div class="row">
+                  <div class="col-sm-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                      <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+                        <path
+                          d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                      </symbol>
+                      <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+                        <path
+                          d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+                      </symbol>
+                      <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+                        <path
+                          d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                      </symbol>
+                    </svg>
+
+                    <div id="infoAlertDiv" class="alert alert-primary d-flex align-items-center alertHide" role="alert">
+                      <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:">
+                        <use xlink:href="#info-fill" />
+                      </svg>
+                      <div id="infoAlertMessage">
+                      </div>
+                    </div>
+
+                    <div id="succesAlertDiv" class="alert alert-success d-flex align-items-center alertHide"
+                      role="alert">
+                      <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:">
+                        <use xlink:href="#check-circle-fill" />
+                      </svg>
+                      <div id="succesAlertMessage">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-2">
+                    <button type="submit" class="btn btn-primary" style="width: 100%">Gönder</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+      <!-- ihbar şikayet modal end-->
+
+      <section class="cardsArea" id="contact">
+
+        <div class="card-custom">
+          <a class="cardLink" href="#modal-ihbar-sikayet" data-mdb-toggle="modal">
+            <center>
+              <div class="card-body-custom">
+                <span class="cardsIconArea">
+                  <i class="bi bi-info-circle"></i>
+                </span>
+                <h1>İHBAR/ŞİKAYET</h1>
+              </div>
+              <div class="card-footer-custom">
+                <p>İHBAR VE ŞİKAYETLERİNİZ BİZİM İÇİN ÖNEMLİ.</p>
+              </div>
+            </center>
+          </a>
+        </div>
+        <div class="card-custom">
+          <a class="cardLink" href="https://alo170vc.pusulacc.com.tr:3000/">
+            <center>
+              <div class="card-body-custom">
+                <span class="cardsIconArea">
+                  <i class="bi bi-camera-video-fill"></i></span>
+                <h1>GÖRÜNTÜLÜ DESTEK</h1>
+              </div>
+              <div class="card-footer-custom">
+                <p>
+                  GÖRÜNTÜLÜ DESTEK HATTIMIZDA İŞARET DİLİ BİLEN
+                  TEMSİLCİLERİMİZLE İLETİŞİM KURABİLİRSİNİZ.
+                </p>
+              </div>
+            </center>
+          </a>
+        </div>
+        <div class="card-custom">
+          <a class="cardLink" id="liveChatActive">
+            <center>
+              <div class="card-body-custom">
+                <span class="cardsIconArea">
+                  <i class="bi bi-headset"></i>
+                </span>
+                <h1>CANLI DESTEK</h1>
+              </div>
+              <div class="card-footer-custom">
+                <p>
+                  CANLI DESTEK EKİBİMİZLE İLE YAZIŞARAK DAHA HIZLI VE KOLAYCA
+                  İŞLEMLERİNİZİ GERÇEKLEŞTİREBİLİRSİNİZ.
+                </p>
+              </div>
+            </center>
+          </a>
+        </div>
+        <div class="card-custom">
+          <a class="cardLink" href="#sss">
+            <center>
+              <div class="card-body-custom">
+                <span class="cardsIconArea">
+                  <i class="bi bi-question-circle-fill"></i>
+                </span>
+
+                <h1>SIK SORULAN SORULAR</h1>
+              </div>
+              <div class="card-footer-custom">
+                <p>
+                  ÇSGB.SGK.İŞKUR VE MYK KURUMLARIMIZA AİT SIK SORULAN SORULARA
+                  VE CEVAPLARINA KOLAYCA ERİŞEBİLİRSİNİZ.
+                </p>
+              </div>
+            </center>
+          </a>
+        </div>
+      </section>
+      <!--Section: cards area for ihbar, görüntülü destek, canlı destek, sss  cards-->
+
+      <hr class="my-5" />
+
+      <!--Section: Bildirim sorgulama-->
+      <section id="bildirimSorgula" class="text-center">
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <h4 class="mb-5"><strong>Bildirim Sorgulama</strong></h4>
+
+        <div class="accordion accordion-borderless" id="accordionFlushExampleX">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOneX">
+              <button class="accordion-button" type="button" data-mdb-toggle="collapse"
+                data-mdb-target="#flush-collapseOneX" aria-expanded="true" aria-controls="flush-collapseOneX">
+                <strong class="accordionBtn">
+                  Bu alandaki bilgileri doldurarak bildirimlerinizi
+                  sorgulayabilirsiniz.
+                </strong>
+              </button>
+            </h2>
+            <div id="flush-collapseOneX" class="accordion-collapse collapse show" aria-labelledby="flush-headingOneX"
+              data-mdb-parent="#accordionFlushExampleX">
+              <div class="accordion-body">
+                <!-- accordion içeriği -->
+                <div class="row g-3">
+                  <div class="col-sm-7">
+                    <div class="form-outline">
+                      <input type="number" id="bildirimSorguTC" class="form-control" />
+                      <label class="form-label" for="bildirimSorguTC">T.C Kimlik numaranız</label>
+                    </div>
+                  </div>
+                  <div class="col-sm">
+                    <div class="form-outline">
+                      <input type="number" id="bildirimSorguNo" class="form-control" />
+                      <label class="form-label" for="bildirimSorguNo">Bildirim Numaranız</label>
+                    </div>
+                  </div>
+                  <div class="col-sm">
+                    <div class="form-outline">
+                      <button id="bildirimSorguButton" class="btn btn-primary">Sorgula</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion accordion-borderless">
+          <div class="accordion-item">
+            <div id="bildirimSonucArea" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <div class="row">
+                  <div class="col-sm-11">
+                    <h5 style="padding-bottom: 15px"><strong>Sonuç</strong></h5>
+                  </div>
+                  <div class="col-sm-1">
+                    <a id="bildirimSonucAreaClose" style="color: unset" href="#bildirimSorgula">x</a>
+                  </div>
+                </div>
+                <div id="bildirimSonucText">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+      </section>
+      <!--Section: Bildirim sorgulama-->
+
+      <hr class="my-5" />
+
+      <!--Section: haberler ve duyurular alanı-->
+      <section id="news" class="mb-5">
+        <br />
+        <br />
+        <br />
+        <br />
+        <h4>HABERLER VE DUYURULAR</h4>
+        <div class="newsArea" id="newsElement">
+          <!-- haberler ve duyurular bu alana listeleniyor-->
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      </section>
+      <!--Section: haberler ve duyurular alanı -->
+      <hr class="my-5" />
+      <!--Section: sgk tv alanı -->
+      <section id="sgkTV" class="mb-5">
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <h4>SGK TV</h4>
+
+        <div class="newsArea" id="sgkTVelement">
+          <!-- sgk tv videoları bu alana listeleniyor-->
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      </section>
+      <section id="bilgilendirme" class="mb-5">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!--Section: sgk tv alanı -->
+
+        <hr class="my-5" />
+        <!--Section: ALO170 bilgilendirme alanı -->
+
+        <h4>ALO170 bilgilendirmeler</h4>
+        <br />
+        <br />
+        <!-- ALO170 bilgilendirmeler buraya listeleniyor -->
+      </section>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <!--Section: ALO170 bilgilendirme alanı -->
+      <hr class="my-5" />
+
+      <!--Section: ALO170 sss alanı-->
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+
+      <section id="sss" class="mb-5" style="height: 600px;">
+        <h4>Sıkça Sorulan Sorular</h4>
+        <br />
+        <br />
+
+        <!-- Tabs navs -->
+        <!-- Ana başlıklar burada listeleniyor-->
+        <ul class="nav nav-tabs nav-justified mb-3" id="ex1" role="tablist"></ul>
+        <!-- Tabs navs -->
+
+        <!-- Tabs content -->
+        <div class="tab-content" id="ex2-content">
+          <div id="searchBarArea" style="width: 60%; margin-left: 35%;"></div>
+          <!-- main başlıkların content i buraya listeleniyor-->
+        </div>
+
+      </section>
+      <!--Section: ALO170 sss alanı-->
+    </div>
+  </main>
+  <!--Main layout-->
+
+  <!-- News Modal -->
+  <div id="newsModalsArea">
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <!--Footer-->
+  <footer class="bg-light text-lg-start">
+    <hr class="m-0" />
+
+    <div class="text-center py-4 align-items-center">
+      <div>
+        &copy;
+        <span id="copyright">
+          <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+        </span>
+        ALO170
+      </div>
+    </div>
+
+  </footer>
+  <!--Footer-->
+  <!-- MDB -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+
+  <!-- live chat script -->
+  <script src="./js/live-chat.js"></script>
+  <!-- live chat script -->
+
+
+  <script src="./js/main.js"></script>
+
+  <!-- alert JavaScript -->
+  <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+
+  <!-- imy service js api request -->
+  <script src="./js/api-request/services.js"></script>
+  <script src="./js/api-request/imyService.js"></script>
+
+
+</body>
+
+</html>

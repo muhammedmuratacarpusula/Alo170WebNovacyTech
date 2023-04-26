@@ -1,0 +1,324 @@
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.infoForIstatistic {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around !important;
+}
+
+section {
+  margin-bottom: 20% !important;
+}
+
+.referanceLogo {
+  margin-right: 5%;
+}
+
+.istatisticValue {
+  margin: 100px;
+  font-size: 20px;
+}
+
+.istatisticText {
+  width: 100%;
+}
+
+.numberValuesIstatistic {
+  font-size: 50px;
+}
+
+.cardsArea {
+  display: flex;
+  flex-direction: row;
+}
+
+.cardsIconArea {
+  font-size: 150px;
+}
+
+.btn-primary {
+  background-color: #10133e !important;
+  color: white !important;
+  font-size: 15px !important;
+}
+
+.accordionBtn {
+  color: #10133e !important;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #2191d0 #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 14px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #2191d0;
+  border-radius: 7px;
+  border: 3px solid #ffffff;
+}
+
+
+
+/* custom card footer end card desing */
+.card-custom {
+  display: flex;
+  color: #10133e !important;
+  width: 400px;
+  flex-direction: column;
+  background-color: #f5f5f5;
+  margin: 0 4px;
+
+}
+
+.card-custom:hover {
+  -webkit-box-shadow: -12px 9px 37px -21px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -12px 9px 37px -21px rgba(0, 0, 0, 0.75);
+  box-shadow: -12px 9px 37px -21px rgba(0, 0, 0, 0.75);
+  transition: 0.5s;
+}
+
+.card-custom .card-footer-custom {
+  margin-top: 50px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.card-custom .card-footer-custom p {
+  font-size: 16px;
+  font-weight: 100;
+}
+
+h4 {
+  color: #10133e !important;
+}
+
+/* haberler ve duyurular css start */
+.newsArea {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.newsCards {
+  width: 30% !important;
+}
+
+/* haberler ve duyurular css end */
+
+.cardLink {
+  text-decoration: none !important;
+  color: #10133e !important;
+}
+
+/* social media buttons start */
+
+/* .social-media:hover {
+  background-color: rgb(48, 145, 242) !important;
+} */
+
+.facebook:hover {
+  background-color: #1877f2 !important;
+}
+
+.instagram:hover {
+  background-color: #fe3943 !important;
+}
+
+.twitter:hover {
+  background-color: #1d9bf0 !important;
+}
+
+.youtube:hover {
+  background-color: #ff0000 !important;
+}
+
+.desktopRefernaceLogo {
+  margin-top: 5%;
+}
+
+.desktopAlo170 {
+  margin-top: 2%;
+}
+
+.desktopISKUR {
+  margin-top: 7%;
+}
+
+.desktopSGK {
+  margin-top: 7%;
+}
+
+.desktopMYK {
+  margin-left: -7%;
+}
+
+.telno{
+  transition: 0.5s !important;
+}
+
+.whatsappDestek{
+  transition: 0.5s;
+}
+
+.whatsappDestek:hover{
+  background-color: green !important;
+  transition: 0.5s;
+}
+
+.telno:hover{
+  background-color: #1877f2 !important;
+  transition: 0.5s !important;
+}
+
+.yurtDisi{
+  transition: 0.5s;
+}
+
+.yurtDisi:hover{
+  background-color: rgb(185, 1, 1) !important;
+  transition: 0.5s;
+}
+
+ 
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+
+  .navbar-brand {
+    margin-right: 0% !important;
+  }
+
+  .infoForIstatistic {
+    flex-direction: column;
+  }
+
+  .istatisticValue {
+    margin: 0px;
+    font-size: 15px;
+    margin-bottom: 10%;
+    margin-top: -10%;
+  }
+
+   
+
+  .istatisticIcon {
+    width: 64px !important;
+  }
+
+  .cardsArea {
+    flex-direction: column;
+
+  }
+
+  .card-custom {
+    width: 95%;
+    margin-bottom: 5%;
+  }
+
+  .card-custom .card-footer-custom {
+    margin-left: 0px;
+  }
+
+  .newsArea {
+    flex-direction: column;
+  }
+
+  .newsCards {
+    width: 100% !important;
+    margin-top: 5%;
+  }
+
+  .referanceLogo {
+    width: 40%;
+    height: 40%;
+    margin-bottom: 10%;
+    margin-left: 30%;
+  }
+
+  .mobileReferanceLogo {
+    width: 25%;
+    height: 25%;
+    margin-left: 35%;
+    margin-bottom: 15%;
+  }
+
+
+  .myk {
+    width: 15%;
+    height: 15%;
+    margin-left: 43%;
+    margin-top: -10%;
+  }
+
+  .sgk {
+    margin-left: 40%;
+  }
+
+  .alo170 {
+    margin-left: 32%;
+  }
+
+  .csgb {
+    margin-left: 30%;
+  }
+}
+
+@media (min-width: 991.98px) {
+  main {
+    padding-left: 240px;
+  }
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding: 58px 0 0;
+  /* Height of navbar */
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+  width: 240px;
+  z-index: 600;
+}
+
+@media (max-width: 991.98px) {
+  .sidebar {
+    width: 100%;
+  }
+}
+
+.sidebar .active {
+  border-radius: 5px;
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: 0.5rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+  /* Scrollable contents if viewport is shorter than content. */
+}
+
+.alertHide {
+  display: none !important;
+}
