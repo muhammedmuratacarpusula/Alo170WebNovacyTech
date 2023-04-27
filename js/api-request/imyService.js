@@ -408,6 +408,7 @@ $(function () {
         data["LastName"] = ihbarSoyadInput.value;
         data["Phone"] = ihbarTelefonInput.value;
         data["IdentityNo"] = ihbarTcInput.value;
+        data["Birthdate"] = ihbarDogumTarihInput.value;
       }
       else {
         infoAlertMessage.innerHTML = "TC Kimlik numarası geçersiz";
@@ -417,6 +418,11 @@ $(function () {
 
     if (checkResponse) {
       postNotice(data).done(function (response) {
+        console.log(response)
+        if (response.Code != 400) {
+          /// tasarımsal
+          document.getElementById("modal_body").style = "filter: blur(8px);"
+       }
         if (response.State) {
           succesAlertMessage.innerHTML = response.Message;
           succesAlertDiv.classList.remove("alertHide");
