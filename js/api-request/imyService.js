@@ -5,18 +5,20 @@ $(function () {
   var bugunCozumSaglandi = webData.istatistik.bugunBasvuruCozumSagladi;
   var bugunGorusmeSagladi = webData.istatistik.bugunGorusmeSagladi;
   var suanGorusmede = webData.istatistik.suandaGorusme;
+  var buAy = webData.istatistik.buAyCozumBuldu;
 
   var formattedBuYil = buYil.toLocaleString('tr-TR');
   var formattedBugunCozumSaglandi = bugunCozumSaglandi.toLocaleString('tr-TR');
   var formattedBugunGorusmeSagladi = bugunGorusmeSagladi.toLocaleString('tr-TR');
   var formattedSuanGorusmede = suanGorusmede.toLocaleString('tr-TR');
+  var formattedBuAy = buAy.toLocaleString('tr-TR');
   
   // istatistik verileri değişkenden html elementlerine değerleri yazdırılıyor
   document.getElementById('gorusmede').textContent = formattedSuanGorusmede // şuanda görüşmede olan vatandaşlar
   document.getElementById('bugunGorusmeSagladi').textContent = formattedBugunGorusmeSagladi // bugün ne kadar görüşme sağlandı
   document.getElementById('bugunBasvuruCozumSagladi').textContent = formattedBugunCozumSaglandi // bugün kaç vatandaş çözüme ulaştı
   document.getElementById('buYilGorusmeSaglayanVatandaslar').textContent = formattedBuYil // bu yıl kaç gorusme saglandı
-
+  document.getElementById('buAyGorusmeSaglayanVatandaslar').textContent = formattedBuAy // bu ay kaç görüşme sağlandı
   //console.log(webData.kvkk)
 
 
