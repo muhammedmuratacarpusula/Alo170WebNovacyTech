@@ -129,7 +129,7 @@ $(function () {
     document.getElementById("ex1").innerHTML += `
     <li class="nav-item" role="presentation">
       <a
-        class="nav-link"
+        class="nav-link fs-4"
         id="ex3-tab-${sss_prop.Id}"
         data-mdb-toggle="tab"
         data-sss-main-id="${sss_prop.Id}"
